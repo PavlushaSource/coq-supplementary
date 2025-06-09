@@ -3,3 +3,4 @@ src/*
 *Makefile*
 !Makefile
 _CoqProject
+.lia.cache
