@@ -41,7 +41,7 @@ Section S.
   *)
 
   Lemma st_binds_eq_st_eval (st : state) (x : id) (v : A) :
-    (st_binds st x v) <-> (st_eval st x = Some v).
+    st_binds st x v <-> st_eval st x = Some v.
   Proof using Type.
     intros.
     induction st.
@@ -156,7 +156,7 @@ Qed.
   Qed. 
 
   Lemma state_extensional_equivalence (st st' : state) (H: forall x z, st / x => z <-> st' / x => z) : st = st'.
-  Proof. admit. Admitted.
+  Admitted. 
   (* TODO: Proof is incomplete *)
 
   Definition state_equivalence (st st' : state) := forall x a, st / x => a <-> st' / x => a.

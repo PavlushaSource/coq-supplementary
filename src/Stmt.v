@@ -356,8 +356,8 @@ Module Renaming.
     (s         : stmt)
     (r         : Renaming.renaming)
     (c c'      : conf)
-    (Hbs       : (rename_conf r c) == rename r s ==> (rename_conf r c')) : c == s ==> c'.
   Proof. admit. Admitted.
+    (Hbs       : (rename_conf r c) == rename r s ==> (rename_conf r c')) : c == s ==> c'.
     
   Lemma renaming_invariant (s : stmt) (r : renaming) : s ~e~ (rename r s).
   Proof. admit. Admitted.
